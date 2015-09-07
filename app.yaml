@@ -9,11 +9,12 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /static/debug_toolbar
+  static_dir: debug_toolbar/static/debug_toolbar
+
 - url: .*
   script: myproject.wsgi.application
 
 libraries:
 - name: django
   version: "1.5"
-- name: django-debug-toolbar
-  version: "1.3.2"
